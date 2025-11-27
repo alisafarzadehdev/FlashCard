@@ -30,11 +30,6 @@ interface ApiService {
         @Field("password") password: String
     ): Response<RegisterResponse>
 
-
-
-
-
-
     @FormUrlEncoded
     @POST("AddCard.php")
     suspend fun addFlashCard(
@@ -44,6 +39,6 @@ interface ApiService {
         @Field("english[]") english: List<String>,
         @Field("persian[]") persian: List<String>
     ): AddFlashcardResponse
-    
+
 
 }
