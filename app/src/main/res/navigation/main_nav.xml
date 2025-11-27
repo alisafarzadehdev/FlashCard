@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/flashCardMainFragment">
+
+    <fragment
+        android:id="@+id/myFlashCardFragment"
+        android:name="ir.safarzadehali.myapp.fragment.main.MainMyFlashCardFragment"
+        android:label="fragment_my_flash_card"
+        tools:layout="@layout/fragment_my_flash_card" >
+        <action
+            android:id="@+id/action_myFlashCardFragment_to_wordFragment"
+            app:destination="@id/wordFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/flashCardMainFragment"
+        android:name="ir.safarzadehali.myapp.fragment.main.MainFlashCardFragment"
+        android:label="fragment_flash_card_main"
+        tools:layout="@layout/fragment_flash_card_main" >
+        <action
+            android:id="@+id/action_myFlashCardFragment_to_wordFragment"
+            app:destination="@id/wordFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="ir.safarzadehali.myapp.fragment.main.MainAddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/wordFragment"
+        android:name="ir.safarzadehali.myapp.fragment.WordFragment"
+        android:label="WordFragment">
+
+        <argument
+            android:name="FlashCard"
+             app:argType="ir.safarzadehali.myapp.model.all.FlashCard"
+            />
+
+    </fragment>
+
+</navigation>

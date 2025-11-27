@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <EditText
+            android:id="@+id/etTitle"
+            android:hint="عنوان فلش کارت"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            />
+
+        <!-- Description -->
+        <EditText
+            android:id="@+id/etDescription"
+            android:hint="توضیحات"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Container for dynamic words -->
+        <LinearLayout
+            android:id="@+id/wordsContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Add new word button -->
+        <Button
+            android:id="@+id/btnAddWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="افزودن کلمه جدید"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Submit -->
+        <Button
+            android:id="@+id/btnSubmitFlashcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ثبت فلش کارت"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

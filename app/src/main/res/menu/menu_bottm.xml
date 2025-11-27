@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addFragment"
+        android:icon="@drawable/add_menu"
+        android:title="ساخت فلش کارت" />
+    <item
+        android:id="@+id/flashCardMainFragment"
+        android:icon="@drawable/flashcard_menu"
+        android:title="فلش کارت‌ها" />
+    <item
+        android:id="@+id/myFlashCardFragment"
+        android:icon="@drawable/myflashcard_menu"
+        android:title="فلش کارت‌های من" />
+</menu>
