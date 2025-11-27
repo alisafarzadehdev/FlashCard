@@ -44,4 +44,16 @@ interface ApiService {
         @Field("english[]") english: List<String>,
         @Field("persian[]") persian: List<String>
     ): AddFlashcardResponse
+
+
+    @FormUrlEncoded
+    @POST("AddCard.php")
+    suspend fun NewflashCard(
+        @Field("user_id") userId: Int,
+        @Field("title") title: String,
+        @Field("description") description: String,
+        @Field("english[]") english: List<String>,
+        @Field("persian[]") persian: List<String>
+    )
+
 }
